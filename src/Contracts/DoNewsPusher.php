@@ -4,5 +4,5 @@ namespace Fangxu\DoNewsPush;
 
 interface DoNewsPusher
 {
-	
+
 }

@@ -67,10 +67,9 @@ class MiPush implements PushInterface
         ];
 
 
-
-        if($deviceToken == 0){
+        if ($deviceToken == 0) {
             $url = 'https://api.xmpush.xiaomi.com/v3/message/all';
-        }else{
+        } else {
             $url = 'https://api.xmpush.xiaomi.com/v3/message/regid';
         }
         $response = $this->_request->post($url, [

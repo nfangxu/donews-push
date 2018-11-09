@@ -18,8 +18,8 @@ class Push
 
     public function __construct()
     {
-        if (!file_exists(config_path("push.php"))){
-            throw new PushException("配置文件: ". config("push.php"). " 不存在", 500);
+        if (!file_exists(config_path("push.php"))) {
+            throw new PushException("配置文件: " . config("push.php") . " 不存在", 500);
         }
         static::$_config = config("push");
         static::$_platform = config("push.platform");
@@ -28,7 +28,7 @@ class Push
 
     private function getSerivce($platform)
     {
-        switch($platform){
+        switch ($platform) {
             case APNS:
                 $service = "ApnsPush";
                 break;
@@ -85,7 +85,7 @@ class Push
      */
     public function getToken($platform, $app_id, $user_id)
     {
-        if(!is_array($user_id)){
+        if (!is_array($user_id)) {
             return false;
         }
         foreach ($user_id as $key => $val) {

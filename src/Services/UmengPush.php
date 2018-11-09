@@ -66,9 +66,9 @@ class UmengPush implements PushInterface
      */
     public function sendMessage($deviceToken, $title, $message)
     {
-        if($deviceToken == "0"){
+        if ($deviceToken == "0") {
             $type = 'broadcast';
-        }else{
+        } else {
             $type = 'unicast';
         }
 

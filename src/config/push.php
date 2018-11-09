@@ -2,7 +2,7 @@
 
 return [
 
-	'redis' => [
+    'redis' => [
 
         'client' => 'predis',
 
@@ -16,24 +16,24 @@ return [
 
     "platform" => [
         "mi" => [
-        	"app_package_name" => env("MI_APP_PACKAGE_NAME", null),
-        	"app_secret" => env("MI_APP_SECRET", null),
+            "app_package_name" => env("MI_APP_PACKAGE_NAME", null),
+            "app_secret" => env("MI_APP_SECRET", null),
         ],
 
         "umeng" => [
-        	"app_key" => env("UMENG_APP_KEY", null),
-        	"app_master_secret" => env("UMENG_APP_MASTER_SECRET", null),
+            "app_key" => env("UMENG_APP_KEY", null),
+            "app_master_secret" => env("UMENG_APP_MASTER_SECRET", null),
         ],
 
         "huawei" => [
-        	"client_id" => env("HUAWEI_CLIENT_ID", null),
-        	"client_secret" => env("HUAWEI_CLIENT_SECRET", null),
+            "client_id" => env("HUAWEI_CLIENT_ID", null),
+            "client_secret" => env("HUAWEI_CLIENT_SECRET", null),
         ],
 
         "apple" => [
-        	"APNS_CERTIFICATE_PATH" => env("APNS_CERTIFICATE_PATH", null),
-        	"APNS_CERTIFICATE_PASSPHRASE" => env("APNS_CERTIFICATE_PASSPHRASE", null),
-        	"APNS_ENVIRONMENT" => env("APNS_ENVIRONMENT", "sandbox"), // production
+            "APNS_CERTIFICATE_PATH" => env("APNS_CERTIFICATE_PATH", null),
+            "APNS_CERTIFICATE_PASSPHRASE" => env("APNS_CERTIFICATE_PASSPHRASE", null),
+            "APNS_ENVIRONMENT" => env("APNS_ENVIRONMENT", "sandbox"), // production
         ],
     ],
 
